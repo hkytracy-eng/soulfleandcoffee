@@ -3,7 +3,7 @@ body{
     font-family: "gaegu","jf-openhuninn-2.1";
 }
 .newest{
-    background-image: url(./IMG/Homepage/herobanner.jpg);
+    background-image: url(../IMG/Homepage/herobanner.jpg);
     background-repeat: no-repeat;
     max-width: 1200px;
     height: 600px;
