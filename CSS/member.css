@@ -64,7 +64,7 @@ body{
 /****************** VIP benefit tier1 **************************/
 .bgi1{
     display: block;
-    background-image: url(../IMG/Member/TIER1.jpg);
+    background-image: url(/IMG/Member/TIER1.jpg)
     width: 310px;
     height: 450px;
     opacity: .8;
