@@ -1,0 +1,347 @@
+body{
+    font-size: 10px;
+}
+
+.title{
+    font-size: 4em;
+    font-family: "gaegu";
+    text-align: center;
+    color: #8B4411;
+    text-shadow: 0px 4px 4px gray;
+    letter-spacing:12px;
+    margin-top: 222px;
+}
+
+.point{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.point h1{
+    font-size: 4em;
+    letter-spacing: 10px;
+    line-height: 40px;
+    color: #8B4411;
+    padding-bottom: 24px;
+}
+
+.point h2{
+    display: inline-block;
+    font-size: 2em;
+    letter-spacing: 8px;
+    line-height: 40px;
+    background-color: #E47026;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/****************** VIP benefit **************************/
+.benefit ul{
+    display:flex;
+   justify-content: center;
+}
+
+
+
+.benefit > h1{
+   text-align: center;
+   font-size: 4em;
+   letter-spacing: 10px;
+   line-height: 40px;
+   color: #8B4411;
+   margin-bottom: 60px;
+}
+
+.inside{
+    width: 260px;
+    height: 350px;
+    background-color: white;
+    margin:50px 25px;
+    text-align: center;
+}
+/****************** VIP benefit tier1 **************************/
+.bgi1{
+    display: block;
+    background-image: url(./IMG/Member/TIER1.jpg);
+    width: 310px;
+    height: 450px;
+    opacity: .8;
+    background-size: cover;
+    box-shadow: 12px 12px 8px #6F81B0;
+}
+
+.bgi1:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 16px 16px 12px #4a5c8a;
+}
+
+.bgi1 h1{
+    font-size: 3.6em;
+    color: #6F81B0;
+    text-align: center;
+    padding-top: 27px;
+    line-height: 40px;
+    letter-spacing: 10px;
+}
+
+.bgi1 .inside h2{
+    display: inline-block;
+    font-size: 1.2em;
+    line-height: 16px;
+    letter-spacing:4px;
+    color: white;
+    background-color: #6F81B0;
+    padding: 4px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+}
+
+.bgi1 .inside h3{
+    display: inline-block;
+    font-size: 1.6em;
+    line-height: 16px;
+    letter-spacing:4px;
+    color:#6F81B0;
+    margin-bottom: 32px;
+}
+
+.bgi1 .inside p{
+    text-align: left;
+    margin-bottom: 12px;
+    font-size: 1.2em;
+    line-height: 16px;
+    letter-spacing: 2px;
+    margin-left: 40px;
+}
+.bgi1 .inside p::before{
+    content:"";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(./IMG/Member/gift1.png);
+    background-size: cover;
+    margin-right: 8px;
+}
+/****************** VIP benefit tier2 **************************/
+.bgi2{
+    display: block;
+    background-image: url(./IMG/Member/TIER2.jpg);
+    background-size: cover;
+    width: 310px;
+    height: 450px;
+    margin:0 60px;
+    opacity: .8;
+    box-shadow: 12px 12px 8px #E1AEA5 ;
+}
+
+.bgi2:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  box-shadow: 16px 16px 12px  #9c6b61;
+}
+
+.bgi2 h1{
+    font-size: 3.6em;
+    color: #E1AEA5;
+    text-align: center;
+    padding-top: 27px;
+    line-height: 40px;
+    letter-spacing: 10px;
+}
+
+.bgi2 .inside h2{
+    display: inline-block;
+    font-size: 1.2em;
+    line-height: 16px;
+    letter-spacing:4px;
+    color: white;
+    background-color:#E1AEA5;
+    padding: 4px;
+    border-radius: 12px;
+     margin-bottom: 32px;
+}
+
+.bgi2 .inside h3{
+    display: inline-block;
+    font-size: 1.6em;
+    line-height: 16px;
+    letter-spacing:4px;
+    color:#E1AEA5;
+    margin-bottom: 32px;
+}
+
+.bgi2 .inside p{
+    text-align: left;
+    margin-bottom: 12px;
+    font-size: 1.2em;
+    line-height: 16px;
+    letter-spacing: 2px;
+    margin-left: 18.5px;
+}
+
+.bgi2 .inside p::before{
+    content:"";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(./IMG/Member/gift2.png);
+    background-size: cover;
+    margin-right: 8px;
+}
+.bgi2 .inside .p2::before{
+    content:"";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(./IMG/Member/birthday2.png);
+    background-size: cover;
+    margin-right: 8px;
+}
+/****************** VIP benefit tier3 **************************/
+.bgi3{
+    display: block;
+    background-image: url(IMG/Member/TIER3.jpg);
+    background-size: cover;
+    width: 310px;
+    height: 451px;
+    opacity: .8;
+    box-shadow: 12px 12px 8px #707070;
+}
+
+.bgi3:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  box-shadow: 16px 16px 12px  #3b3a3a;;
+}
+
+.bgi3 h1{
+    font-size: 3.6em;
+    color: #707070;
+    text-align: center;
+    padding-top: 27px;
+    line-height: 40px;
+    letter-spacing: 10px;
+}
+
+.bgi3 .inside h2{
+    display: inline-block;
+    font-size: 1.2em;
+    line-height: 16px;
+    letter-spacing:4px;
+    color: white;
+    background-color:#707070;
+    padding: 4px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+}
+
+.bgi3 .inside h3{
+    display: inline-block;
+    font-size: 1.6em;
+    line-height: 16px;
+    letter-spacing:4px;
+    color:#707070;
+    margin-bottom: 32px;
+}
+
+.bgi3 .inside p{
+    text-align: left;
+    margin-bottom: 12px;
+    font-size: 1.2em;
+    line-height: 16px;
+    letter-spacing: 2px;
+    margin-left: 17.5px;
+}
+
+.bgi3 .inside p::before{
+    content:"";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(./IMG/Member/gift3.png);
+    background-size: cover;
+    margin-right: 8px;
+}
+.bgi3 .inside .p3::before{
+    content:"";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(./IMG/Member/birthday3.png);
+    background-size: cover;
+    margin-right: 8px;
+}
+
+/****************** new VIP *************************/
+
+.newvip{
+    justify-content: center;
+    align-items: center;    
+}
+
+.newvip h1{
+    font-size: 4em;
+    letter-spacing: 10px;
+    line-height: 40px;
+    color: #8B4411;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.newvip ul{
+  display: flex;
+  margin-top: 44px;
+  justify-content: center;
+  margin-bottom: 60px;
+
+}
+
+.newvip li{
+min-height: 247px;
+min-width: 200px;
+margin: 0 60px;
+text-align: center;
+overflow: hidden;
+}
+
+.newvip li img{
+    width: 200px;
+    
+}
+
+.newvip li img:hover{
+   transform: rotate(30deg);
+   transition:all .5s ease; 
+}
+
+.newvip span{
+display: flex;
+font-size: 1.6em;
+line-height: 40px;
+letter-spacing:4px;
+justify-content: center;
+
+}
+/****************** button *************************/
+button{
+    background-color: #d96f2b;
+    padding:20px 20px;
+    border-radius:30px;
+    border: none;
+    color: white;
+    letter-spacing:12px;
+  
+    display: flex;
+    left:0;
+    right:0;
+    top:0;
+    margin:auto;
+    margin-bottom: 60px;
+}
+
+button:hover{
+    opacity:.5;
+}

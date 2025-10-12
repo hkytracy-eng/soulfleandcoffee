@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style_hf.css">
+    <link rel="stylesheet" href="CSS/reservation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+
+    <title>SOULFLE AND COFFEE_Reservation Page</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-----------------------header--------------------------->
+    <header>
+         <div class="logo"><a href="index.html"> <img src="IMG/logo/square.png" alt="LOGO"></a></div>
+         <div class="nav">
+             <ul>
+                   <li>
+                        <a href="about us.html">關於我們</a>
+                  </li>
+                    <li>    
+                       <a href="menu.html">菜單</a>
+                        <ol>
+                            <li><a href="#">主食</a></li>
+                            <li><a href="#">小吃</a></li>
+                            <li><a href="#">舒芙蕾</a></li>
+                            <li><a href="#">飲料</a></li>
+                        </ol>
+                 </li>
+                    <li><a href="reservation.html">訂座</a></li>
+                    <li><a href="member.html">會員福利</a></li>
+                    <li>    
+                        <a href="promotion page.html">最新資訊</a>
+                        <ol>
+                            <li><a href="#">新品上市</a></li>
+                            <li><a href="#">活動推廣</a></li>
+                            <li><a href="#">媒體採訪</a></li>
+                        </ol>
+                    </li>
+
+             <li>    
+                <a href="contact us.html">聯絡我們</a>
+                <ol>
+                    <li><a href="#">人才招募</a></li>
+                    <li><a href="#">合作聯繫</a></li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    </header>
+
+      <!----------------------- top banner --------------------------->
+     <div class="container">
+        <div class="title">
+            <h1>RESERVATION</h1>
+        </div>
+        <div class="top">
+            <h1>BOOK A TABLE</h1>
+            <img class="vertical" src="IMG/reservation/vertical.jpg" alt="banner">
+            <img class="horizonal" src="IMG/reservation/horizon.jpg" alt="banner_m">
+        </div>
+     </div>
+        <!----------------------- reservation form --------------------------->
+    <div class="form-container">
+        <h2>馬上預約</h2>
+        <form id="reservationForm">
+            <div class="form-group">
+                <div class="form-row">
+                    <div>
+                        <label for="lastName">姓氏 *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div>
+                        <label for="firstName">名字 *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="radio-group">
+                    <div class="radio-wrapper">
+                        <input type="radio" id="miss" name="title" value="小姐" checked>
+                        <label for="miss">小姐</label>
+                    </div>
+                    <div class="radio-wrapper">
+                        <input type="radio" id="mr" name="title" value="先生">
+                        <label for="mr">先生</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">聯絡電話 *</label>
+                <input type="tel" id="phone" name="phone" placeholder="0912-345-678" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">電子郵件 *</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row">
+                    <div>
+                        <label for="people">用餐人數</label>
+                        <select id="people" name="people">
+                            <option value="1">1位大人</option>
+                            <option value="2">2位大人</option>
+                            <option value="3">3位大人</option>
+                            <option value="4">4位大人</option>
+                            <option value="5">5位大人</option>
+                            <option value="6">6位大人</option>
+                            <option value="7">7位大人</option>
+                            <option value="8">8位大人</option>
+                            <option value="9">9位大人</option>
+                            <option value="10">10位以上</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="children">兒童人數</label>
+                        <select id="children" name="children">
+                            <option value="0">0位小孩</option>
+                            <option value="1">1位小孩</option>
+                            <option value="2">2位小孩</option>
+                            <option value="3">3位小孩</option>
+                            <option value="4">4位小孩</option>
+                            <option value="5">5位以上</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row">
+                    <div>
+                        <label for="date">用餐日期</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div>
+                        <label for="time">用餐時間</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>用餐目的</label>
+                <div class="purpose-grid">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="birthday" name="purpose" value="慶生">
+                        <label for="birthday" class="checkbox-label">慶生</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="anniversary" name="purpose" value="週年慶">
+                        <label for="anniversary" class="checkbox-label">週年慶</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="gathering" name="purpose" value="朋友聚餐">
+                        <label for="gathering" class="checkbox-label">朋友聚餐</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="date-meal" name="purpose" value="約會">
+                        <label for="date-meal" class="checkbox-label">約會</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="family" name="purpose" value="家庭用餐">
+                        <label for="family" class="checkbox-label">家庭用餐</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="business" name="purpose" value="商務聚餐">
+                        <label for="business" class="checkbox-label">商務聚餐</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">其他備註</label>
+                <textarea id="notes" name="notes" placeholder="有任何特殊需求嗎？可以先寫在這裡喔！（例如行動不便、過敏等）"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">確認訂位</button>
+        </form>
+    </div>
+     <div class="footer">
+                <p>© 2025 SOULFLE AND COFFEE All rights reserved.</p>
+        </div>
+ </div>
+       
+</body>

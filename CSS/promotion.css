@@ -1,0 +1,164 @@
+
+
+body{
+    font-size: 10px;
+}
+.top{
+    padding-top: 162px;
+    /* background-color: yellow; */
+    text-align: center;
+    font-size: 10px;
+    
+}
+
+.top::after{
+    content:"";
+    display: block;
+    border-top: 2px solid lightgray;
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
+
+h1{
+    font-size: 4em;
+    font-family: "gaegu";
+    text-align: center;
+    color: #8B4411;
+    text-shadow: 0px 4px 4px gray;
+    letter-spacing:12px;
+    margin-top: 60px;
+}
+
+h1::after{
+    content:"";
+    display:block;
+    border-top: 2px solid lightgray;
+    margin-top: 60px;
+    
+}
+.title{
+    display:inline-block;
+    padding-bottom: 5px;
+    font-size: 2.4em;
+    font-family: 'jf-openhuninn-2.1';
+    margin-top: 40px;
+    letter-spacing: 12px;
+    color: rgba(000, 000, 000, .5);
+}
+
+.top ul{
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+
+.top li a{
+    letter-spacing: 12px;
+    font-size: 24px;
+    color: black;
+    margin-right: 20px;
+}
+
+
+.top li a::after{
+    content:"丨";
+    display:inline-block;
+    margin-left:  10px; ;
+}
+
+.top li:last-child a::after {
+    content: "";
+}
+
+/************** main content **************/
+.main{
+    max-width: 1200px;
+  
+}
+
+.main ul{
+    display:flex;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main li{
+    max-width: 301.95px;
+    max-height: 314.85px;
+    font-size: 10px;
+    margin-right: 60px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.main img{
+    width: 301.95px;
+    height: 203.27px;
+    filter: drop-shadow(6px 6px rgb(255, 175, 38));
+    border-radius: 0 50px;
+    padding-bottom: 8px;  
+     
+}
+
+.main h6{
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    padding-bottom: 8px;
+}
+
+.main h3{
+    font-size: 1.6em;
+    letter-spacing: 2px;
+    padding-bottom: 8px;
+}
+
+
+h3::after{
+    content:"-";
+    display: block;
+    width: 2px;
+}
+
+.main p{
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp-: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+
+
+    
+/************** button **************/
+
+button{
+    background-color: #d96f2b;
+    padding:20px 20px;
+    border-radius:30px;
+    border: none;
+    color: white;
+    letter-spacing:8px;
+  
+    display: block;
+    margin:60px auto;
+    text-align: center;
+    
+}
+
+
+/************** hover **************/
+
+.main li:hover{
+    transform:translateY(-30px);
+    transition-duration:.5s;
+}
+
+
+button:hover{
+   opacity: .5;
+}

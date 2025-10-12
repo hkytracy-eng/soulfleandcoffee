@@ -1,0 +1,459 @@
+body{
+    font-size: 10px;
+    font-family: "gaegu","jf-openhuninn-2.1";
+}
+.newest{
+    background-image: url(IMG/Homepage/herobanner.jpg);
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    height: 600px;
+    background-size: cover;
+    background-position: bottom;
+    margin-top: 162px;
+    position: relative;
+    
+}
+.newest h1{
+    position: absolute;
+    top:85px;
+    left: 80px;
+    font-size: 9.6em;
+    line-height: 60px;
+    color: #FFE9E7;
+    letter-spacing:12px;
+
+}
+
+.newest p{
+    position: absolute;
+    top: 162px;
+    left: 80px;
+    font-size: 4em;
+    line-height: 60px;
+    color: #EE4E32;
+    letter-spacing: 12px;
+    
+}
+
+/***************** brand intro *****************/
+.brand{
+    max-width: 1200px;
+    height: 430px;
+    background-color:rgba(255,255,255,.5);
+    padding: 50px 140px;
+}
+.brandcontainer{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rightcontent img{
+    display: block;
+    width: 400px;
+    height: 400px;
+}
+.leftcontent{
+    width: 500px;
+    
+}
+.brandcontainer .leftcontent h1{
+   font-size: 3em;
+   color: #8B4411;
+   text-align: left;
+   margin-bottom: 20px;
+}
+
+.brandcontainer .leftcontent p{
+    font-size: 1.6em;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.brandcontainer .leftcontent button{
+    background-color: #D96F2B;
+    color:white;
+    border:none;
+    padding:20px;
+    letter-spacing: 4px;
+    line-height: 20px;
+    border-radius:40px; 
+}
+
+.brandcontainer .leftcontent button:hover{
+    opacity: .5;
+}
+
+/***************** popular dish *****************/
+.populardish{
+  margin-top: 60px;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.populardish h1{
+  font-size: 4em;
+  color:#8B4411;
+  line-height: 48px;
+  letter-spacing:12px;
+  text-shadow: 0,4px,4px black;
+}
+
+.populardish p{
+    font-size: 2em;
+    line-height: 24px;
+    letter-spacing:4px;
+    margin-top: 24px;
+    color:#D96F2B;
+}
+
+.dish ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    margin-top: 40px;
+    
+
+}
+
+.dish ul li{
+    width: 340px;
+    height: 380px;
+    overflow: hidden;
+}
+
+.dish ul li img{
+    height:340px;
+    width:340px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 350ms cubic-bezier(.2,.9,.3,1);
+}
+.dish ul li img:hover{
+    transform: translateX(8%) scale(1.06) rotate(0.6deg);
+}
+
+.dish ul li h2{
+    margin-top: 10px;
+    font-size: 1.6em;
+    line-height: 16px;
+    letter-spacing: 4px;
+    text-align: left;
+}
+/***************** how to make souffle tab list*****************/
+.souffle{
+    margin-top: 60px;
+}
+.souffle h1{
+    font-size: 4em;
+    line-height: 48px;
+    color: #8B4411;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+.souffle h2{
+    font-size: 2.4em;
+    line-height: 24px;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 24px;
+}
+.pancake{
+   width: 350px;
+   display: block;
+   margin: 0 auto;
+}
+
+.souffle #tab-nav {
+    position: relative;
+    display: flex;
+
+    justify-content: space-between;
+    /* margin-top: max(1.7188vw, 30px); */
+    padding-bottom: 30px;
+}
+
+.souffle  #tab-nav .tab-item {
+    width: 100%;
+    text-align: center;
+   
+}
+
+.souffle #tab-nav .tab-item:first-child, .souffle #tab-nav .tab-item:last-child {
+        margin-top: -170px;
+    }
+
+.souffle #tab-nav .tab-item:nth-child(3) {
+        margin-top: 120px;
+    }
+/* .souffle  #tab-nav .tab-item a {
+    text-decoration: none;
+    color: #40220f;
+    outline: none;
+    transition: all .6s cubic-bezier(.215, .61, .355, 1);
+} */
+
+.souffle .img-wrap {
+    position: relative;
+    height: 0 !important;
+    padding-bottom: 57% !important;
+}
+
+.souffle #tab-nav .img-wrap img {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  
+}
+
+.souffle #tab-nav .list-name {
+    position: relative;
+    font-size: 2em;
+    letter-spacing: 1.6px;
+    line-height: 24px;
+    margin-top: 80px;
+    margin-right: 40px;
+    color:#8B4411;
+}
+
+
+
+/***************** how to make souffle tab content *****************/
+.souffle #tab-content {
+    padding: 30px 15px 30px 30px;  
+}
+
+.souffle #tab-content .content-item.active {
+    display: flex;
+}
+
+.souffle #tab-content .flex-block {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.souffle #tab-content .content-title {
+    position: relative;
+    flex:0 0 30%;
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing:2px;
+    line-height:normal;
+    padding-right:20px;
+    color: #8B4411;
+}
+
+.souffle #tab-content .content-summary {
+    flex: 0 0 77%;
+    font-size: 1.8em;
+    letter-spacing: normal;
+    line-height: 1.3;
+    width: 100%;
+    color: #D96F2B;
+    margin-left: -100px;
+}
+
+
+.souffle #tab-content .content-item {
+    display: none;
+}
+/***************** menu *****************/
+.menu{
+    margin-top: 60px;
+}
+
+.menu h1{
+    font-size: 4em;
+    line-height: 48px;
+    letter-spacing:4px;
+    color: #8B4411;
+    text-align: center;
+}
+
+.menu h2{
+    font-size: 2.4em;
+    line-height: 24px;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.menucover ul{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 40px;
+    margin-top:60px;
+}
+
+.menucover ul li{
+    width: 245px;
+    height: 380px;
+    overflow: hidden;
+    
+}
+.menucover ul li img{
+    width: 245px;
+    height: 340px;
+    border-radius:999px;
+    box-sizing: border-box;
+    filter:contrast(.5)
+}
+
+.menucover ul li img:hover{
+    border: 8px solid white;
+    filter:contrast(1);
+}
+
+.menucover ul li p{
+    font-size: 2.4em;
+    line-height: 16px;
+    color: #8B4411;
+    text-align: center;
+    padding: 12px;
+
+}
+/***************** visit us *****************/
+
+.locationcontainer{
+    margin-top: 60px;
+    display:flex;
+    flex-direction: column;
+    height: 320px;
+    position: relative;
+
+}   
+
+.locationtitle{
+    font-size: 4em;
+    line-height: 148px;
+    margin:60px 0 0 40px;
+    color: #8B4411;
+}
+.location{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color:red;
+    position: absolute;
+    top: 10px;
+    letter-spacing: 4px;
+    
+}
+.map{
+    position: absolute;
+    left:40px;
+    top:0px;
+}
+.address h1{
+    color: #8B4411;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.address{
+    position: absolute;
+    left: 400px;
+    font-size: 2em;
+    line-height: 48px;
+    width:600px;
+    padding: 20px;
+    margin-left: 100px;
+    font-family: "jf-openhuninn-2.1";
+    
+}
+
+/***************** comment *****************/
+.comment{
+    display: flex;
+    height: 300px;
+    align-items: center;
+}
+
+.leftcontent{
+    width: 400px;
+    margin:0px 60px;
+}
+
+.leftcontent h1{
+    font-size: 4em;
+    color: black;
+    text-align: right;
+    letter-spacing: 4px;
+    line-height: 48px;
+}
+
+.leftcontent h2{
+    font-size: 2em;
+    color:black;
+    text-align: right;
+    letter-spacing: 1px;
+    line-height:24px;
+}
+
+.rightcontent ul{
+    /* background-color: red; */
+    display: flex;
+    width: 812px;
+ 
+}
+
+.rightcontent ul li{
+
+    background-color:rgba(255,200,45,.5);
+    width: 240px;
+    margin-right: 40px;
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 4px white;
+    font-size: 1.6em;
+    line-height: 24px;
+}
+
+.rightcontent ul li p{
+    display:-webkit-box;
+    -webkit-line-clamp-: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-top:16px ;
+}
+
+.rightcontent ul li h3::after{
+    content: "★★★★★";
+    display: block;
+    color: #E9A653;
+    float: right;
+}
+
+.rightcontent ul li h3::before{
+    content:"";
+    display: block;
+    background-color: rgba(000,000,000,.5);
+    width: 20px;
+    height: 20px;
+    float:left;
+    margin: 2px 8px 0px 0px;
+    border-radius: 50%;
+    
+}
+    
+/*******hover********/
+
+.souffle #tab-nav .img-wrap img:hover {
+    transform:rotate(360deg);
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+
+}
+
+.pancake:hover {
+    transform: translateY(-30px) scale(1.05);
+    transition: all .5s cubic-bezier(.215, .61, .355, 1);
+}
