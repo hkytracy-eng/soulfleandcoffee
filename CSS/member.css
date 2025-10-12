@@ -64,7 +64,7 @@ body{
 /****************** VIP benefit tier1 **************************/
 .bgi1{
     display: block;
-    background-image: url(./IMG/Member/TIER1.jpg);
+    background-image: url(../IMG/Member/TIER1.jpg);
     width: 310px;
     height: 450px;
     opacity: .8;
@@ -121,14 +121,14 @@ body{
     display: inline-block;
     width: 16px;
     height: 16px;
-    background-image: url(./IMG/Member/gift1.png);
+    background-image: url(../IMG/Member/gift1.png);
     background-size: cover;
     margin-right: 8px;
 }
 /****************** VIP benefit tier2 **************************/
 .bgi2{
     display: block;
-    background-image: url(./IMG/Member/TIER2.jpg);
+    background-image: url(../IMG/Member/TIER2.jpg);
     background-size: cover;
     width: 310px;
     height: 450px;
@@ -187,7 +187,7 @@ body{
     display: inline-block;
     width: 16px;
     height: 16px;
-    background-image: url(./IMG/Member/gift2.png);
+    background-image: url(../IMG/Member/gift2.png);
     background-size: cover;
     margin-right: 8px;
 }
@@ -196,14 +196,14 @@ body{
     display: inline-block;
     width: 16px;
     height: 16px;
-    background-image: url(./IMG/Member/birthday2.png);
+    background-image: url(../IMG/Member/birthday2.png);
     background-size: cover;
     margin-right: 8px;
 }
 /****************** VIP benefit tier3 **************************/
 .bgi3{
     display: block;
-    background-image: url(IMG/Member/TIER3.jpg);
+    background-image: url(../IMG/Member/TIER3.jpg);
     background-size: cover;
     width: 310px;
     height: 451px;
@@ -261,7 +261,7 @@ body{
     display: inline-block;
     width: 16px;
     height: 16px;
-    background-image: url(./IMG/Member/gift3.png);
+    background-image: url(../IMG/Member/gift3.png);
     background-size: cover;
     margin-right: 8px;
 }
@@ -270,7 +270,7 @@ body{
     display: inline-block;
     width: 16px;
     height: 16px;
-    background-image: url(./IMG/Member/birthday3.png);
+    background-image: url(../IMG/Member/birthday3.png);
     background-size: cover;
     margin-right: 8px;
 }
