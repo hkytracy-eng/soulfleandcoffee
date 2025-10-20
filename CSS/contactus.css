@@ -92,24 +92,29 @@ body{
 }
 /************************ contact box ******************/
 .contactbox{
-    width: 800px;
+    width: 1200px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
     margin-top: 60px; 
     margin-bottom: 60px;
-  
- 
+    display:flex;
+    
+}
+.contactbox .msg{
+    width:50vw;
+   height: auto;
 }
 .contactbox form {
   display: flex;
   flex-direction: column;
-  align-items:flex-end;
   gap:20px;
+  width: 100vw;
+  margin-left: 20px;
 }
 
 .input-field{
-    width:40%;
+    width:60%;
     padding:12px;
     box-sizing:border-box;
     background-color:rgba(217,107,43,.5);
@@ -117,10 +122,11 @@ body{
     border:none;
     font-size:16px;
     font-family: "jf-openhuninn-2.1","gaegu";
+   
 }
 
 .input-field2{
-    width: 40%;
+    width: 60%;
     height: 200px;
     padding: 12px;
     box-sizing: border-box;
@@ -144,9 +150,7 @@ body{
     margin-top: 20px;
     letter-spacing: 8px;
     transition: all 1s;
-    float:right;
-    margin-right: 55px;
-   
+    margin-left:70px;
 }
 
 /************************ hover ******************/
