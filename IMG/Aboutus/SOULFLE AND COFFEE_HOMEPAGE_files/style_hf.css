@@ -22,7 +22,6 @@ body{
 }
 
 header{
-    width: 100vw;
     height: 100px;
     position: fixed;
     left:0;
@@ -32,9 +31,8 @@ header{
 
     display:flex;
     align-items: center;
-    justify-content: space-between ;
+    justify-content: center;
    
-    
     background-color: rgba(255, 255, 255, .5);
     
    
@@ -42,7 +40,6 @@ header{
 .logo img{
     height: 150px;
     display:block;
-    margin-left: 120px;
 }
 
 /************* footer *****************/
@@ -65,19 +62,16 @@ header{
 
 .nav ul {
     display: flex;
-    margin-right: 120px;
- 
 }
 
 .nav ul > li {
     position: relative; 
-    
 }
 
 .nav ul > li > a {
     display: block;    
     padding: 15px 20px; 
-    color:#666;        
+    color: black;        
     font-family: 'jf-openhuninn-2.1';
     font-size: 2em;
   

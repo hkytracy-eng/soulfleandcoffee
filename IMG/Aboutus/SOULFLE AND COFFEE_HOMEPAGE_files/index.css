@@ -70,23 +70,20 @@ body{
     font-size: 1.6em;
     line-height: 30px;
     margin-bottom: 20px;
-    color:#666;
 }
 
 .brandcontainer .leftcontent button{
-    background-color: rgba(228,112,38,.7);
+    background-color: #D96F2B;
     color:white;
     border:none;
     padding:20px;
     letter-spacing: 4px;
     line-height: 20px;
     border-radius:40px; 
-    transition:all 1s;
 }
 
 .brandcontainer .leftcontent button:hover{
-   transform:scale(1.05);
-    background-color: rgba(228,112,38);
+    opacity: .5;
 }
 
 /***************** popular dish *****************/
@@ -102,7 +99,6 @@ body{
   line-height: 48px;
   letter-spacing:12px;
   text-shadow: 0,4px,4px black;
- 
 }
 
 .populardish p{
@@ -111,7 +107,6 @@ body{
     letter-spacing:4px;
     margin-top: 24px;
     color:#D96F2B;
-   
 }
 
 .dish ul{
@@ -135,11 +130,10 @@ body{
     width:340px;
     object-fit: cover;
     object-position: center;
-    transition: transform 2s cubic-bezier(.2,.9,.3,1);
+    transition: transform 350ms cubic-bezier(.2,.9,.3,1);
 }
 .dish ul li img:hover{
-    transform: translateY(-8%) scale(1.06) rotate(0.6deg);
-     
+    transform: translateX(8%) scale(1.06) rotate(0.6deg);
 }
 
 .dish ul li h2{
@@ -148,7 +142,6 @@ body{
     line-height: 16px;
     letter-spacing: 4px;
     text-align: left;
-    color:#666;
 }
 /***************** how to make souffle tab list*****************/
 .souffle{
@@ -272,7 +265,10 @@ body{
     display: none;
 }
 
-
+.souffle #tab-nav .img-wrap img{
+    transform:translateY(-30px);
+    transition: all 1s;
+}
 /***************** menu *****************/
 .menu{
     margin-top: 60px;
@@ -352,6 +348,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    background-color:red;
     position: absolute;
     top: 10px;
     letter-spacing: 4px;
@@ -377,7 +374,6 @@ body{
     padding: 20px;
     margin-left: 100px;
     font-family: "jf-openhuninn-2.1";
-    color: #666;
     
 }
 
@@ -395,7 +391,7 @@ body{
 
 .leftcontent h1{
     font-size: 4em;
-    color: #666;
+    color: black;
     text-align: right;
     letter-spacing: 4px;
     line-height: 48px;
@@ -403,7 +399,7 @@ body{
 
 .leftcontent h2{
     font-size: 2em;
-    color:#666;
+    color:black;
     text-align: right;
     letter-spacing: 1px;
     line-height:24px;
@@ -434,7 +430,6 @@ body{
     -webkit-box-orient: vertical;
     overflow: hidden;
     padding-top:16px ;
-    color:#666;
 }
 
 .rightcontent ul li h3::after{
@@ -457,18 +452,14 @@ body{
 }
     
 /*******hover********/
-/* .souffle #tab-nav .img-wrap {
-    transform:translateY(-15px);
-    transition:all 1s;
-} */
-.souffle #tab-nav .img-wrap img:hover {
-    transform:rotate(15deg);
+
+/* .souffle #tab-nav .img-wrap img:hover {
+    transform:rotate(360deg);
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
 
-}
+} */
 
 .pancake:hover {
     transform: translateY(-30px) scale(1.05);
     transition: all .5s cubic-bezier(.215, .61, .355, 1);
 }
-
