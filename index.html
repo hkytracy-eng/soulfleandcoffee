@@ -288,11 +288,36 @@
                 </ul>
             </div>
         </div>
+
+  
+
     <!----------------------- footer --------------------------->   
     <div class="footer">
              <p>© 2025 SOULFLE AND COFFEE All rights reserved.</p>
     </div>
-        
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const tabs = document.querySelectorAll(".tab-item a");
+    const contents = document.querySelectorAll(".content-item");
+
+    tabs.forEach(tab => {
+    tab.addEventListener("click", function (e) {
+    e.preventDefault(); // 阻止預設跳轉錨點
+
+      <!--1️ 取得目標內容區塊 ID--> 
+      const targetId = this.getAttribute("href").replace("#", "");
+
+      <!--2 移除全部 active 樣式-->
+      tabs.forEach(t => t.parentElement.classList.remove("active"));
+      contents.forEach(c => c.classList.remove("active"));
+
+      <!--3 為被點擊的項目加上 active-->
+      this.parentElement.classList.add("active");
+      document.getElementById(targetId).classList.add("active");
+    });
+  });
+});
+</script>       
   
 </body>
 </html>

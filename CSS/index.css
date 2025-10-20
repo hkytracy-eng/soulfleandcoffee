@@ -272,6 +272,27 @@ body{
     display: none;
 }
 
+.souffle #tab-content .content-item {
+    transition:all 1s;
+}
+
+
+/* === 可選：加上輕微的縮放效果（讓進場更柔和） === */
+.souffle #tab-content .content-item.active .content-title,
+.souffle #tab-content .content-item.active .content-summary {
+  animation: popIn 0.8s ease forwards;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.98) translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
 
 /***************** menu *****************/
 .menu{
@@ -471,4 +492,3 @@ body{
     transform: translateY(-30px) scale(1.05);
     transition: all .5s cubic-bezier(.215, .61, .355, 1);
 }
-
