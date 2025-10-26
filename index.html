@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/style_hf.css">
-    <link rel="stylesheet" href="CSS/index.css">
+      <link rel="stylesheet" href="CSS/index.css">
+      <link rel="stylesheet" href="CSS/style_hf.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
@@ -15,42 +15,49 @@
 <body>
      <div class="wrapper">
         <!-----------------------header--------------------------->
-    <header>
-         <div class="logo"><a href="index.html"> <img src="IMG/logo/square.png" alt="LOGO"></a></div>
-         <div class="nav">
-             <ul>
-                   <li>
-                        <a href="about us.html">關於我們</a>
-                  </li>
-                    <li>    
-                       <a href="menu.html">菜單</a>
-                        <ol>
-                            <li><a href="#">主食</a></li>
-                            <li><a href="#">小吃</a></li>
-                            <li><a href="#">舒芙蕾</a></li>
-                            <li><a href="#">飲料</a></li>
-                        </ol>
-                 </li>
-                    <li><a href="reservation.html">訂座</a></li>
-                    <li><a href="member.html">會員福利</a></li>
-                    <li>    
-                        <a href="promotion page.html">最新資訊</a>
-                        <ol>
-                            <li><a href="#">新品上市</a></li>
-                            <li><a href="#">活動推廣</a></li>
-                            <li><a href="#">媒體採訪</a></li>
-                        </ol>
-                    </li>
+      <header>
+  <div class="logo">
+    <a href="index.html"><img src="IMG/logo/square.png" alt="LOGO"></a>
+  </div>
 
-             <li>    
-                <a href="contact us.html">聯絡我們</a>
-                <ol>
-                    <li><a href="#">人才招募</a></li>
-                    <li><a href="#">合作聯繫</a></li>
-                </ol>
-            </li>
-        </ul>
-    </div>
+  <!-- 🔸 漢堡按鈕 -->
+  <div class="menu-btn">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="nav">
+    <ul>
+      <li><a href="about us.html">關於我們</a></li>
+      <li class="has-sub">
+        <a href="menu.html">菜單</a>
+        <ol>
+          <li><a href="#">主食</a></li>
+          <li><a href="#">小吃</a></li>
+          <li><a href="#">舒芙蕾</a></li>
+          <li><a href="#">飲料</a></li>
+        </ol>
+      </li>
+      <li><a href="reservation.html">訂座</a></li>
+      <li><a href="member.html">會員福利</a></li>
+      <li class="has-sub">
+        <a href="promotion page.html">最新資訊</a>
+        <ol>
+          <li><a href="#">新品上市</a></li>
+          <li><a href="#">活動推廣</a></li>
+          <li><a href="#">媒體採訪</a></li>
+        </ol>
+      </li>
+      <li class="has-sub">
+        <a href="contact us.html">聯絡我們</a>
+        <ol>
+          <li><a href="#">人才招募</a></li>
+          <li><a href="#">合作聯繫</a></li>
+        </ol>
+      </li>
+    </ul>
+  </div>
     </header>
 
      <!----------------------- top banner --------------------------->
@@ -296,6 +303,27 @@
              <p>© 2025 SOULFLE AND COFFEE All rights reserved.</p>
     </div>
  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('.nav');
+    const subMenus = document.querySelectorAll('.nav .has-sub');
+
+    // 漢堡選單開關
+    menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+
+    // 點擊展開子選單
+    subMenus.forEach(link => {
+        link.addEventListener('click', e => {
+        if (window.innerWidth <= 800) {
+            e.preventDefault();
+            const li = link.parentElement;
+            li.classList.toggle('open');
+        }
+        });
+    });
+
     document.addEventListener("DOMContentLoaded", function () {
     const tabs = document.querySelectorAll(".tab-item a");
     const contents = document.querySelectorAll(".content-item");
@@ -304,18 +332,178 @@
     tab.addEventListener("click", function (e) {
     e.preventDefault(); // 阻止預設跳轉錨點
 
-      <!--1️ 取得目標內容區塊 ID--> 
+    //   <!--1️ 取得目標內容區塊 ID--> 
       const targetId = this.getAttribute("href").replace("#", "");
 
-      <!--2 移除全部 active 樣式-->
+    //   <!--2 移除全部 active 樣式-->
       tabs.forEach(t => t.parentElement.classList.remove("active"));
       contents.forEach(c => c.classList.remove("active"));
 
-      <!--3 為被點擊的項目加上 active-->
+    //   <!--3 為被點擊的項目加上 active-->
       this.parentElement.classList.add("active");
       document.getElementById(targetId).classList.add("active");
     });
   });
+});
+
+ // Tab 切換功能
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // 獲取所有 tab 項目和內容區塊
+    const tabItems = document.querySelectorAll('.souffle #tab-nav .tab-item');
+    const contentItems = document.querySelectorAll('.souffle #tab-content .content-item');
+    
+    // 為每個 tab 項目添加點擊事件
+    tabItems.forEach((item, index) => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // 獲取點擊的連結 href (例如 #milk, #eggs)
+            const targetId = this.querySelector('a').getAttribute('href');
+            
+            // 移除所有 tab 的 active 樣式
+            tabItems.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // 為當前點擊的 tab 添加 active 樣式
+            this.classList.add('active');
+            
+            // 隱藏所有內容區塊
+            contentItems.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // 顯示對應的內容區塊
+            const targetContent = document.querySelector(targetId);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+            
+            // 平滑滾動到內容區域 (在小螢幕上)
+            const contentSection = document.querySelector('.souffle #tab-content');
+            if (window.innerWidth <= 800 && contentSection) {
+                contentSection.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'nearest' 
+                });
+            }
+        });
+    });
+    
+    // 初始化：設定第一個 tab 為 active
+    if (tabItems.length > 0 && contentItems.length > 0) {
+        tabItems[0].classList.add('active');
+        contentItems[0].classList.add('active');
+    }
+    
+    // 觸控滑動優化（針對桌面裝置的拖曳功能）
+    const tabNav = document.querySelector('.souffle #tab-nav');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    
+    if (tabNav) {
+        // 滑鼠按下
+        tabNav.addEventListener('mousedown', (e) => {
+            isDown = true;
+            tabNav.style.cursor = 'grabbing';
+            startX = e.pageX - tabNav.offsetLeft;
+            scrollLeft = tabNav.scrollLeft;
+        });
+        
+        // 滑鼠離開
+        tabNav.addEventListener('mouseleave', () => {
+            isDown = false;
+            if (window.innerWidth > 800) {
+                tabNav.style.cursor = 'grab';
+            }
+        });
+        
+        // 滑鼠放開
+        tabNav.addEventListener('mouseup', () => {
+            isDown = false;
+            if (window.innerWidth > 800) {
+                tabNav.style.cursor = 'grab';
+            }
+        });
+        
+        // 滑鼠移動
+        tabNav.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - tabNav.offsetLeft;
+            const walk = (x - startX) * 2; // 滑動速度倍數
+            tabNav.scrollLeft = scrollLeft - walk;
+        });
+    }
+    
+    // 響應式處理：視窗大小改變時重置
+    window.addEventListener('resize', function() {
+        if (tabNav) {
+            if (window.innerWidth > 800) {
+                tabNav.style.cursor = 'grab';
+            } else {
+                tabNav.style.cursor = 'default';
+            }
+        }
+    });
+    
+    // 鍵盤導航支援
+    tabItems.forEach((item, index) => {
+        item.addEventListener('keydown', function(e) {
+            // Enter 或 Space 鍵點擊
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+            
+            // 右箭頭切換到下一個
+            if (e.key === 'ArrowRight' && index < tabItems.length - 1) {
+                e.preventDefault();
+                tabItems[index + 1].focus();
+                tabItems[index + 1].click();
+                
+                // 自動滾動到可見位置
+                tabItems[index + 1].scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'nearest',
+                    inline: 'center'
+                });
+            }
+            
+            // 左箭頭切換到上一個
+            if (e.key === 'ArrowLeft' && index > 0) {
+                e.preventDefault();
+                tabItems[index - 1].focus();
+                tabItems[index - 1].click();
+                
+                // 自動滾動到可見位置
+                tabItems[index - 1].scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'nearest',
+                    inline: 'center'
+                });
+            }
+        });
+        
+        // 添加 tabindex 讓鍵盤可以 focus
+        item.setAttribute('tabindex', '0');
+    });
+    
+    // 觸控滑動提示（可選）
+    if (tabNav && window.innerWidth <= 800) {
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        tabNav.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+        
+        tabNav.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+        });
+    }
 });
 </script>       
   

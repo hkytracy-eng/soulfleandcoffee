@@ -16,42 +16,49 @@
     <div class="wrapper">
         <!-----------------------header--------------------------->
     <header>
-         <div class="logo"><a href="index.html"> <img src="IMG/logo/square.png" alt="LOGO"></a></div>
-         <div class="nav">
-             <ul>
-                   <li>
-                        <a href="about us.html">關於我們</a>
-                  </li>
-                    <li>    
-                       <a href="menu.html">菜單</a>
-                        <ol>
-                            <li><a href="#">主食</a></li>
-                            <li><a href="#">小吃</a></li>
-                            <li><a href="#">舒芙蕾</a></li>
-                            <li><a href="#">飲料</a></li>
-                        </ol>
-                 </li>
-                    <li><a href="reservation.html">訂座</a></li>
-                    <li><a href="member.html">會員福利</a></li>
-                    <li>    
-                        <a href="promotion page.html">最新資訊</a>
-                        <ol>
-                            <li><a href="#">新品上市</a></li>
-                            <li><a href="#">活動推廣</a></li>
-                            <li><a href="#">媒體採訪</a></li>
-                        </ol>
-                    </li>
+  <div class="logo">
+    <a href="index.html"><img src="IMG/logo/square.png" alt="LOGO"></a>
+  </div>
 
-             <li>    
-                <a href="contact us.html">聯絡我們</a>
-                <ol>
-                    <li><a href="#">人才招募</a></li>
-                    <li><a href="#">合作聯繫</a></li>
-                </ol>
-            </li>
-        </ul>
-    </div>
-    </header>
+  <!-- 🔸 漢堡按鈕 -->
+  <div class="menu-btn">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="nav">
+    <ul>
+      <li><a href="about us.html">關於我們</a></li>
+      <li class="has-sub">
+        <a href="menu.html">菜單</a>
+        <ol>
+          <li><a href="#">主食</a></li>
+          <li><a href="#">小吃</a></li>
+          <li><a href="#">舒芙蕾</a></li>
+          <li><a href="#">飲料</a></li>
+        </ol>
+      </li>
+      <li><a href="reservation.html">訂座</a></li>
+      <li><a href="member.html">會員福利</a></li>
+      <li class="has-sub">
+        <a href="promotion page.html">最新資訊</a>
+        <ol>
+          <li><a href="#">新品上市</a></li>
+          <li><a href="#">活動推廣</a></li>
+          <li><a href="#">媒體採訪</a></li>
+        </ol>
+      </li>
+      <li class="has-sub">
+        <a href="contact us.html">聯絡我們</a>
+        <ol>
+          <li><a href="#">人才招募</a></li>
+          <li><a href="#">合作聯繫</a></li>
+        </ol>
+      </li>
+    </ul>
+  </div>
+</header>
      <!----------------------- main --------------------------->
        
      <h1 class="title" >SOULFLE AND COFFEE MEMBER</h1>
@@ -133,5 +140,27 @@
 
 </div> 
     </div>
+    <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('.nav');
+    const subMenus = document.querySelectorAll('.nav .has-sub');
+
+    // 漢堡選單開關
+    menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+
+    // 點擊展開子選單
+    subMenus.forEach(link => {
+        link.addEventListener('click', e => {
+        if (window.innerWidth <= 800) {
+            e.preventDefault();
+            const li = link.parentElement;
+            li.classList.toggle('open');
+        }
+        });
+    });
+    </script>
     </body>
 </html>

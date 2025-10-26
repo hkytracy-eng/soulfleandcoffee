@@ -62,7 +62,7 @@ header{
     line-height: 92px;
     text-align: center;
 }
-
+/************* nav *****************/
 .nav ul {
     display: flex;
     margin-right: 120px;
@@ -122,8 +122,197 @@ ul li ol li a {
 
 
 ul li ol li a:hover {
-    background-color:rgba(228,112,38,.7); 
+    background-color:#ccc; 
     color:white;
     
 }
 
+/*************** 漢堡按鈕 ************/
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.menu-btn .bar {
+  height: 3px;
+  background-color: #8B4411;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/**************** RWD ******************/
+/* === RWD：800px 以下 === */
+@media (max-width: 800px) {
+  .menu-btn {
+    display: flex;
+    margin-right: 50px;
+   
+  }
+
+  .nav {
+    position: fixed;
+    top: 70px;
+    right: 0px;
+    background-color: #E9A653;
+    width: 50%;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 9999;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav ul li {
+    border-bottom: 1px solid #ffffff;
+    width: 100%;}
+
+ .nav ul li a{
+    color:white;
+  }
+    .nav ul li ol li  {
+  border-bottom: 1px solid #E9A653;
+  }
+
+  .nav ul li ol li a {
+    color:#E9A653;
+    text-align: center;
+  }
+  /* 開啟狀態 */
+  .nav.active {
+    display: flex;
+    width: 50%;
+    margin-right: 50px;
+  }
+
+  .nav ul {
+    width: 100%;
+  }
+
+  /* 漢堡變叉叉 */
+  .menu-btn.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+  .menu-btn.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-btn.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+
+  /* 手機版子選單展開樣式 */
+  .nav ol {
+    display: none;
+    position: static;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .nav li.open > ol {
+    display: block;
+  }
+/* 加在子選單父項目上 */
+  .nav li.has-sub > a {
+    position: relative;
+    display: inline-block;
+    padding-right: 20px; /* 留空間給箭頭 */
+  }
+
+  /* 預設下箭頭 */
+  .nav li.has-sub ::after {
+    content: '▼';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.7em;
+    color: white;
+    transition: transform 0.3s;
+  }
+
+  /* 展開時改成上箭頭 */
+  .nav li.open ::after {
+    content: '▲';
+    /* transform: translateY(-50%) rotate(180deg); */
+  }
+
+   /* Footer */
+    .footer {
+        height: 80px;
+    }
+
+    .footer p {
+        font-size: 16px;
+        letter-spacing: 4px;
+        line-height: 80px;
+        padding: 0 20px;
+    }
+
+}
+/* === RWD：400px 以下 === */
+@media (max-width: 400px) {
+  header {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .logo img {
+    width: 50%;
+    
+  }
+
+  .menu-btn {
+    width: 24px;
+    height: 18px;
+
+  }
+
+  .nav {
+    font-size: 14px;
+  }
+
+  .nav li.has-sub > a {
+    padding-right: 20px;
+  }
+
+  .nav li.has-sub > a::after {
+    right: 3px;
+    font-size: 0.65em;
+  }
+
+  /* 預設下箭頭 */
+  .nav li.has-sub > a::after {
+    content: '▼';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.7em;
+    color: white;
+    transition: transform 0.3s;
+  }
+
+  /* 展開時改成上箭頭 */
+  .nav li.open > a::after {
+    content: '▲';
+    /* transform: translateY(-50%) rotate(180deg); */
+  }
+
+  .footer p{
+    font-size: 1.2em;
+    height: auto;
+    line-height: 1.5;
+    white-space: wrap;
+    padding: 20px 10px;
+  }
+}

@@ -46,49 +46,59 @@ body{
     margin-top: 12px;
 }
 
+
 /************************ our location ******************/
-.locationcontainer{
-    margin-top: 60px;
-    background-color: rgba(255,200,45,.5);
-    display:flex;
-    flex-direction: column;
-    height: 550px;
-    position: relative;
-}   
-
-.locationtitle{
-    font-size: 4em;
-    line-height: 148px;
-    margin:60px 0 0 40px;
-    color: #8B4411;
-}
-.location{
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: white;
-    position: absolute;
-    top: 160px;
-    letter-spacing: 4px;
-    
-}
-.map{
-    position: absolute;
-    left:40px;
-    top:0px;
+.locationcontainer {
+  margin-top: 60px;
+  background-color: rgba(255,200,45,.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 60px 40px; */
+  position: relative;
 }
 
-.address{
-    position: absolute;
-    left: 400px;
-    font-size: 3em;
-    line-height: 48px;
-    width:600px;
-    padding: 40px;
-    margin-left: 40px;
-    font-family: "jf-openhuninn-2.1";
-    color: #666;
+.locationtitle {
+  font-size: 4em;
+  line-height: 1.2;
+  margin-top: 50px;
+  color: #8B4411;
+}
+
+/* 用 flex 排地圖與地址 */
+.location {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 60px;
+
+  border-radius: 16px;
+  padding: 40px;
+
+}
+
+/* 地圖設定 */
+.map {
+  width: 400px;
+  height: 300px;
+  border-radius: 12px;
+  border: none;
+}
+
+/* 地址文字區 */
+.address {
+  font-size: 1.8em;
+  line-height: 1.8;
+  color: #555;
+  letter-spacing: 3px;
+  font-family: "jf-openhuninn-2.1";
+  margin-top: 70px;
+}
+
+.address .material-symbols-outlined {
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 1.1em;
 }
 /************************ contact box ******************/
 .contactbox{
@@ -158,4 +168,151 @@ button:hover{
     transform:scale(1.05);
     background-color: rgba(228,112,38);
 
+}
+
+/* 🔸 RWD 800px 以下 */
+@media (max-width: 800px) {
+
+  /* TITLE 縮小字體 */
+  .title {
+    font-size: 2.8em;
+    letter-spacing: 6px;
+    margin-top: 160px;
+  }
+
+  /* top 區塊：改為上下排列 */
+  .top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .top p {
+    font-size: 2.4em;
+    line-height: 48px;
+    margin: 20px 20px;
+  }
+
+  .top img {
+    width: 50%;
+    height: auto;
+    margin:0 auto;
+    outline: 8px solid #8B4411;
+    border-radius: 0 0 200px 200px;
+  }
+
+  /* location 區塊改為垂直 */
+  .location {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+
+  }
+  .locationtitle h1{ 
+    font-family: 'gaegu';
+  }
+  .map {
+    width: 90%;
+    height: 280px;
+  }
+
+  .address {
+    margin-top: 20px;
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  /* contact 表單區塊 */
+  .contactbox {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .contactbox .msg {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .contactbox form {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+
+  .input-field,
+  .input-field2 {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 160px;
+    font-size: 1.4em;
+    margin: 20px auto 0;
+  }
+}
+
+
+/* 🔸 RWD 400px 以下 */
+@media (max-width: 400px) {
+
+  body {
+    font-size: 9px;
+  }
+
+  .title {
+    font-size: 2.2em;
+    margin-top: 120px;
+    letter-spacing: 4px;
+  }
+
+  .top p {
+    font-size: 1.4em;
+    line-height: 20px;
+    margin: 20px 0px ;
+  }
+
+  .top img {
+    width: 50%;
+    outline: 6px solid #8B4411;
+    border-radius: 0 0 150px 150px;
+  }
+
+  .locationtitle {
+    font-size: 3em;
+  }
+
+  .map {
+    width: 100%;
+    height: 220px;
+  }
+
+  .address {
+    font-size: 1.4em;
+    line-height: 1.6;
+    letter-spacing: 2px;
+  }
+
+  .contactbox {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .input-field,
+  .input-field2 {
+    width: 90%;
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .btn {
+    width: 140px;
+    font-size: 1.2em;
+    padding: 10px;
+    letter-spacing: 4px;
+  }
 }
