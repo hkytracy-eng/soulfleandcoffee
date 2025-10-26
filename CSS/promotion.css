@@ -179,3 +179,267 @@ button:hover{
     background-color:#e9a653;
     color: white;
 }
+
+/* ==================== 平板尺寸 (800px以下) ==================== */
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 9px;
+    }
+
+    /* Top Section */
+    .top {
+        padding-top: 120px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .top::after {
+        margin-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    /* Main Title */
+    h1 {
+        font-size: 3.5em;
+        letter-spacing: 8px;
+        margin-top: 40px;
+    }
+
+    h1::after {
+        margin-top: 40px;
+    }
+
+    /* Category Title */
+    .title {
+        font-size: 2em;
+        letter-spacing: 8px;
+        margin-top: 30px;
+    }
+
+    /* Category Navigation */
+    .top ul {
+        flex-wrap: wrap;
+        margin-top: 40px;
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .top li {
+        margin-bottom: 10px;
+    }
+
+    .top li a {
+        letter-spacing: 6px;
+        font-size: 20px;
+        margin-right: 15px;
+        padding: 8px 12px;
+        display: inline-block;
+        border-radius: 8px;
+        transition: all 0.3s;
+    }
+
+    .top li::after {
+        font-size: 1.4em;
+        margin-right: 15px;
+    }
+
+    /* Main Content */
+    .main {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .main ul {
+        margin-left: 0;
+        gap: 40px;
+    }
+
+    .main li {
+        max-width: 320px;
+        max-height: none;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .main img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        filter: drop-shadow(4px 4px rgb(255, 175, 38));
+        border-radius: 0 40px;
+        padding-bottom: 10px;
+    }
+
+    .main h6 {
+        font-size: 1.3em;
+        letter-spacing: 1.5px;
+        padding-bottom: 6px;
+    }
+
+    .main h3 {
+        font-size: 1.7em;
+        letter-spacing: 1.5px;
+        padding-bottom: 8px;
+        line-height: 1.5;
+    }
+
+    .main p {
+        font-size: 1.5em;
+        letter-spacing: 1.5px;
+        line-height: 1.7;
+    }
+
+    /* Button */
+    button {
+        padding: 16px 24px;
+        border-radius: 25px;
+        letter-spacing: 6px;
+        font-size: 1.6em;
+        margin: 40px auto;
+    }
+
+    /* Hover Effects - 優化移動裝置體驗 */
+    .main li:hover {
+        transform: translateY(-15px);
+    }
+}
+
+/* ==================== 手機尺寸 (400px以下) ==================== */
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 8px;
+    }
+
+    /* Top Section */
+    .top {
+        padding-top: 100px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .top::after {
+        margin-top: 25px;
+        padding-bottom: 30px;
+    }
+
+    /* Main Title */
+    h1 {
+        font-size: 3em;
+        letter-spacing: 6px;
+        margin-top: 30px;
+    }
+
+    h1::after {
+        margin-top: 30px;
+    }
+
+    /* Category Title */
+    .title {
+        font-size: 1.8em;
+        letter-spacing: 6px;
+        margin-top: 25px;
+        padding-bottom: 3px;
+    }
+
+    /* Category Navigation */
+    .top ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        gap: 12px;
+        padding: 0;
+    }
+
+    .top li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .top li a {
+        letter-spacing: 4px;
+        font-size: 18px;
+        margin-right: 0;
+        padding: 10px 20px;
+        display: block;
+        width: 80%;
+        max-width: 250px;
+        margin: 0 auto;
+        background-color: rgba(233, 166, 83, 0.1);
+        border-radius: 10px;
+    }
+
+    .top li::after {
+        display: none;
+    }
+
+    /* Main Content */
+    .main {
+        padding: 0 15px;
+    }
+
+    .main ul {
+        gap: 30px;
+        padding:0 10px;
+    }
+
+    .main li {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .main img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        filter: drop-shadow(3px 3px rgb(255, 175, 38));
+        border-radius: 0 35px;
+        padding-bottom: 8px;
+    }
+
+    .main h6 {
+        font-size: 1.3em;
+        letter-spacing: 1px;
+        padding-bottom: 5px;
+    }
+
+    .main h3 {
+        font-size: 1.6em;
+        letter-spacing: 1px;
+        padding-bottom: 6px;
+        line-height: 1.6;
+    }
+
+    .main h3 br {
+        display: inline;
+    }
+
+    .main p {
+        font-size: 1.4em;
+        letter-spacing: 1px;
+        line-height: 1.8;
+        -webkit-line-clamp: 3;
+    }
+
+    /* Button */
+    button {
+        padding: 14px 20px;
+        border-radius: 20px;
+        letter-spacing: 4px;
+        font-size: 1.5em;
+        margin: 30px auto;
+        width: 80%;
+        max-width: 250px;
+    }
+
+    /* Hover Effects - 移動裝置優化 */
+    .main li:hover {
+        transform: translateY(-10px);
+    }
+
+    .main li:active {
+        transform: translateY(-5px);
+        transition-duration: 0.2s;
+    }
+}

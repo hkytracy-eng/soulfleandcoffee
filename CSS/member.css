@@ -355,3 +355,317 @@ button:hover{
     background-color: rgba(228,112,38);
 
 }
+
+/* ==================== 平板尺寸 (800px以下) ==================== */
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 9px;
+    }
+
+    /* Title */
+    .title {
+        font-size: 3.5em;
+        letter-spacing: 8px;
+        margin-top: 150px;
+        padding: 0 20px;
+    }
+
+    /* Point Section */
+    .point {
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+
+    .point h1 {
+        font-size: 3.5em;
+        letter-spacing: 8px;
+        line-height: 36px;
+        padding-bottom: 20px;
+    }
+
+    .point h2 {
+        font-size: 1.8em;
+        letter-spacing: 4px;
+        line-height: 32px;
+        padding: 8px 16px;
+        border-radius: 25px;
+        margin-bottom: 40px;
+    }
+
+    /* VIP Benefit */
+    .benefit > h1 {
+        font-size: 3.5em;
+        letter-spacing: 8px;
+        line-height: 36px;
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+
+    .benefit ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding:0 15px;
+    }
+
+    /* Tier Cards - 共通樣式 */
+    .bgi1, .bgi2, .bgi3 {
+        width: 100%;
+        max-width: 350px;
+        min-height: 420px;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    .bgi2 {
+        margin: 0;
+    }
+
+    /* Inside Content */
+    .inside {
+        width: 90%;
+       
+        margin: 60px 10px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    /* Tier Headers */
+    .bgi1 h1, .bgi2 h1, .bgi3 h1 {
+        font-size: 3.2em;
+        padding-top: 24px;
+        line-height: 36px;
+        letter-spacing: 8px;
+    }
+
+    /* Tier Badges */
+    .bgi1 .inside h2, .bgi2 .inside h2, .bgi3 .inside h2 {
+        font-size: 1.15em;
+        line-height: 20px;
+        letter-spacing: 1px;
+        padding: 6px 12px;
+        border-radius: 10px;
+        margin-bottom: 16px;
+    }
+
+    /* Tier Subtitles */
+    .bgi1 .inside h3, .bgi2 .inside h3, .bgi3 .inside h3 {
+        font-size: 1.4em;
+        line-height: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    /* Tier Benefits */
+    .bgi1 .inside p, .bgi2 .inside p, .bgi3 .inside p {
+        font-size: 1.2em;
+        line-height: 20px;
+        letter-spacing: 1px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* New VIP Section */
+    .newvip h1 {
+        font-size: 3.5em;
+        letter-spacing: 8px;
+        line-height: 36px;
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+
+    .newvip ul {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        gap: 30px;
+    }
+
+    .newvip li {
+        min-height: auto;
+        min-width: auto;
+        width: 90%;
+        max-width: 250px;
+        margin: 0;
+    }
+
+    .newvip li img {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .newvip span {
+        font-size: 1.8em;
+        line-height: 36px;
+        letter-spacing: 3px;
+        margin-top: 10px;
+    }
+
+    /* Button */
+    button {
+        padding: 16px 24px;
+        border-radius: 25px;
+        letter-spacing: 8px;
+        font-size: 1.6em;
+        margin-bottom: 40px;
+        width: auto;
+        max-width: 300px;
+    }
+}
+
+/* ==================== 手機尺寸 (400px以下) ==================== */
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 8px;
+    }
+
+    /* Title */
+    .title {
+        font-size: 3em;
+        letter-spacing: 4px;
+        margin-top: 120px;
+        padding: 0 15px;
+    }
+
+    /* Point Section */
+    .point {
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+
+    .point h1 {
+        font-size: 3em;
+        letter-spacing: 6px;
+        line-height: 32px;
+        padding-bottom: 15px;
+    }
+
+    .point h2 {
+        font-size: 1.6em;
+        letter-spacing: 3px;
+        line-height: 28px;
+        padding: 6px 12px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+
+    /* VIP Benefit */
+    .benefit > h1 {
+        font-size: 3em;
+        letter-spacing: 6px;
+        line-height: 32px;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+
+    .benefit ul {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    /* Tier Cards */
+    .bgi1, .bgi2, .bgi3 {
+        width: 100%;
+        max-width: 320px;
+        min-height: 400px;
+        padding-bottom: 15px;
+    }
+
+    /* Inside Content */
+    .inside {
+        margin: 60px 15px;
+        padding: 30px 15px;
+    }
+
+    /* Tier Headers */
+    .bgi1 h1, .bgi2 h1, .bgi3 h1 {
+        font-size: 2.8em;
+        padding-top: 20px;
+        line-height: 32px;
+        letter-spacing: 6px;
+    }
+
+    /* Tier Badges */
+    .bgi1 .inside h2, .bgi2 .inside h2, .bgi3 .inside h2 {
+        font-size: 1.3em;
+        line-height: 18px;
+        letter-spacing: 2px;
+        padding: 5px 10px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    /* Tier Subtitles */
+    .bgi1 .inside h3, .bgi2 .inside h3, .bgi3 .inside h3 {
+        font-size: 1.5em;
+        line-height: 18px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+    /* Tier Benefits */
+    .bgi1 .inside p, .bgi2 .inside p, .bgi3 .inside p {
+        font-size: 1.3em;
+        line-height: 18px;
+        letter-spacing: 1px;
+        margin-left: 15px;
+        margin-bottom: 12px;
+    }
+
+    .bgi1 .inside p::before,
+    .bgi2 .inside p::before,
+    .bgi3 .inside p::before,
+    .bgi2 .inside .p2::before,
+    .bgi3 .inside .p3::before {
+        width: 14px;
+        height: 14px;
+        margin-right: 6px;
+    }
+
+    /* New VIP Section */
+    .newvip h1 {
+        font-size: 3em;
+        letter-spacing: 6px;
+        line-height: 32px;
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+
+    .newvip ul {
+        margin-top: 25px;
+        margin-bottom: 30px;
+        gap: 25px;
+        flex-direction: column;
+    }
+
+    .newvip li {
+        width: 95%;
+        max-width: 220px;
+    }
+
+    .newvip li img {
+        max-width: 180px;
+    }
+
+    .newvip span {
+        font-size: 1.6em;
+        line-height: 32px;
+        letter-spacing: 2px;
+        margin-top: 8px;
+    }
+
+    /* Button */
+    button {
+        padding: 14px 20px;
+        border-radius: 20px;
+        letter-spacing: 6px;
+        font-size: 1.5em;
+        margin-bottom: 30px;
+        max-width: 280px;
+    }
+
+    .btncontainer {
+        padding: 0 15px;
+    }
+}

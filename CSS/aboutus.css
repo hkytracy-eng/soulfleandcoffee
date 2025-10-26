@@ -300,16 +300,5 @@ body{
         text-align: justify;
     }
 
-    /* Footer */
-    .footer {
-        height: auto;
-        padding: 20px 10px;
-    }
-
-    .footer p {
-        font-size: 12px;
-        letter-spacing: 2px;
-        line-height: 1.5;
-        padding: 0 10px;
-    }
+ 
 }

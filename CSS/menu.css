@@ -258,4 +258,289 @@ body{
     border-radius: 50%;
     
 }
+/* ==================== 平板尺寸 (800px以下) ==================== */
+    @media screen and (max-width: 800px) {
     
+    body {
+        font-size: 10px;
+    }
+
+    /* Top Section */
+    .top h1 {
+        margin-top: 150px;
+        font-size: 3.5em;
+        letter-spacing: 8px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .top p {
+        font-size: 1.8em;
+        line-height: 30px;
+        letter-spacing: 1px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Top Banner */
+    .topbanner {
+        width: 90%;
+        max-width: 700px;
+        margin: 0 auto 40px auto;
+    }
+
+    .topbanner img {
+        border-radius: 0px 150px 150px 0px;
+        border: 10px solid white;
+    }
+
+    /* Slogan Container */
+    .container {
+        height: 80px;
+        margin-bottom: 40px;
+    }
+
+    .slogan, .slogan2, .slogan3, .slogan4 {
+        font-size: 2.4em;
+        letter-spacing: 8px;
+        margin-right: 80px;
+    }
+
+    /* Menu Section */
+    .menu {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto 40px auto;
+        padding: 0 20px;
+    }
+
+    .menu ul {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .menu ul li {
+        width: 45%;
+        min-width: 250px;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .menu ul li img {
+        outline: 6px solid white;
+    }
+
+    .menu li h1 {
+        font-size: 2.5em;
+        padding: 5px;
+    }
+
+    /* 取消奇偶數不同高度的設計 */
+    .menu ul li:nth-child(even) {
+        padding-top: 0;
+    }
+
+    .menu ul li:nth-child(even) h1 {
+        top: 50%;
+    }
+
+    /* Comment */
+    .comment {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 40px;
+    }
+
+    .leftcontent {
+        width: 50%;
+        margin: 0 0 30px 0;
+        text-align: center;
+    }
+
+    .leftcontent h1 {
+        font-size: 3.5em;
+        text-align: center;
+    }
+
+    .leftcontent h2 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .rightcontent ul {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        gap:20px;
+    }
+
+    .rightcontent ul li {
+        width: 100%;
+        max-width: 400px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+/* ==================== 手機尺寸 (400px以下) ==================== */
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 8px;
+    }
+
+    /* Top Section */
+    .top h1 {
+        margin-top: 120px;
+        font-size: 3em;
+        letter-spacing: 6px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .top p {
+        font-size: 1.2em;
+        line-height: 20px;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .top p br {
+        display: inline;
+    }
+
+    /* Top Banner */
+    .topbanner {
+        width: 95%;
+        margin: 0 0 30px 0;
+    }
+
+    .topbanner img {
+        border-radius: 0px 100px 100px 0px;
+        border: 8px solid white;
+    }
+
+    /* Slogan Container */
+    .container {
+        height: 60px;
+        margin-bottom: 30px;
+    }
+
+    .slogan, .slogan2, .slogan3, .slogan4 {
+        font-size: 2em;
+        letter-spacing: 6px;
+        margin-right: 60px;
+    }
+
+    @keyframes slogan {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+
+    @keyframes slogan2 {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+
+    @keyframes slogan3 {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+
+    @keyframes slogan4 {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+
+    /* Menu Section */
+    .menu {
+        width: 100%;
+        margin: 0 auto 30px auto;
+        padding: 0 15px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .menu ul li {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .menu ul li img {
+        outline: 5px solid white;
+    }
+
+    .menu li h1 {
+        font-size: 2.2em;
+        padding: 4px;
+    }
+ /* Comment */
+    .comment {
+        padding: 30px 15px;
+       
+
+    }
+
+    .comment .leftcontent {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .comment .leftcontent h1 {
+        font-size: 3em;
+        letter-spacing: 2px;
+    }
+
+    .comment .leftcontent h2 {
+        font-size: 1.6em;
+    }
+
+    .comment .rightcontent {
+        width: 100%;
+    }
+
+    .comment .rightcontent ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .comment .rightcontent ul li {
+        max-width: 100%;
+        width: calc(100% - 30px);
+        padding: 12px;
+        font-size: 1.4em;
+        line-height: 22px;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+      
+    }
+
+    .comment .rightcontent ul li p {
+        padding-top: 12px;
+        -webkit-line-clamp: 4;
+        word-break: break-word;
+    }
+
+    .comment .rightcontent ul li h3 {
+        font-size: 1.4em;
+    }
+
+    .comment .rightcontent ul li h3::before {
+        width: 18px;
+        height: 18px;
+    }
+
+    .comment .rightcontent ul li h3::after {
+        font-size: 0.9em;
+    }
+}
